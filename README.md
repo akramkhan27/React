@@ -27,3 +27,26 @@
 - In here function or component name first letter should be upperCase.
 - Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</> or we can use div tag also.
 - It is good practice if we give fileName of Component first letter Capital .
+
+# creating custom react
+- refer to 03_customReact repo
+
+# 02_basic_react_vite
+- creating function Chai() inside the main.jsx and execute it with like <Chai/>
+- we can also exeute the Chai() like Chai() but it is not advisable and not a good practice
+- as we know this Chai() function parse to react like tree of of its elements like h3
+- then why not directly give that tree we have created before in customReact
+- it is not executing this <MyElement/> because react expecting function
+- as we know it is an object then we cannot give it like that also MyElement()
+- Object has to direclty use like this MyElement
+- still getting error because React renderer has accepting different parameters like {type, props, value}) and we are giving custom own parameter with different syntax
+- we have created AnotherElement and runnning in main.jsx but this is running successfully because in the end this also parse as object tree
+- now we are creating MyElement with react syntax right form and then parse it
+- to create react element we have React.createElement(type,props,value. optional(variable injected))
+- MyElement has been created and parse succussfully
+- Now lern how to pass variable , first go to App.js in there we learn first
+- { } in this we pass variable only which is evaluated expression only not like if or loop statement
+- why we only pass evaluted expression that answer we get from main.js from our clumsy code MyElement
+- In Object as we know we cannot write if else, loop or evaluting expression directly that's the reason we only write evaluted expression while passing variable
+
+
